@@ -1,10 +1,5 @@
-/*imports*/ 
-/*@import "normalize";
-@import "fluid_skeleton";
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700);*/
-
 html {
-	font: 100%/1.5em 'PT Sans', sans-serif;
+	font: 100%/1.35em 'PT Sans', sans-serif;
 }
 
 body {
@@ -54,6 +49,14 @@ header.band h1 {
 	margin-bottom: 1em;
 }
 
+
+header.band h2 {
+	font-size: 1.0em;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+	
+
 h2 {
 	font-size: 1.6em;
 	margin-top: 1.5em;
@@ -69,10 +72,12 @@ h3 {
 	letter-spacing: 0.1em;
 }
 
-header.a.button {
+a.button {
 	background: #e33f0c;
 	text-align: center;
-	padding: .5em 1em;
+	padding: .25em .25em;
+	margin: .5em .5em;
+	font-size:.75em;
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
@@ -87,8 +92,14 @@ header.a.button {
 	transition: background 0.2s ease-out;  /* Firefox 16+, Opera 12.50+ */
 }
 
-header.a.button:hover {
+a.button:hover {
 	background: #ab3009;
+}
+
+header a.button {
+	margin: 1em 1em;
+	padding: .5em 1em;	
+	font-size: 1em;
 }
 
 footer {
@@ -100,19 +111,7 @@ footer {
 	margin: 0 1em;	
 }
 
-.social-tuts {
-	color: #E36316;
-}
-
-.social-dribbble {
-	color: #c5376d;
-}
-
-.social-facebook {
-	color: #3B5998;
-}
-
-/*as we don't haver many media queries, we'll stick them all here*/
+/*as we don't have many media queries, we'll stick them all here*/
 @media only screen and (min-width: 767px) { 
 	
 	body {
