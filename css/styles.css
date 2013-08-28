@@ -30,6 +30,8 @@ div.band .columns {
 }
 
 header.band {
+	background-image:url(../img/background.jpg);
+	background-size: 100%;
 	background: #4b371f;
 	color: white;
 	text-align: center;

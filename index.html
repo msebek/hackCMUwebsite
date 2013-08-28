@@ -21,13 +21,13 @@
 	<link rel="apple-touch-icon" href="img/CMU-logo.ico" />
 	
 </head>
-<body>
+<body id="skrollr-body">
 	<header class="band" data-0="background-position:0px 0px;" data-500="background-position:0px -250px;">
 		<div class="container">
 			<div class="columns sixteen" data-0="opacity: 1" data-180="opacity: 0">
 				<h1>HackCMU</h1>
 				<h2>Saturday Sept. 14 at 12:00 PM - Sunday Sept. 15 at 2:00 PM</h2>
-				<h2>BH 136A</h2>
+				<h2>Baker Hall 136A</h2>
 				<br />
 				<a class="button" href="#whatIs" onClick="tOL(this, 'Scroll Links', 'hackcmu.com'); return false;">Learn More</a>
 				<a class="button" href="#signUp" onClick="tOL(this, 'Scroll Links', 'hackcmu.com'); return false;">Sign Up</a>
@@ -74,12 +74,12 @@
 				<hr> 
 				<div class="columns eight offset-by-five">
 					<h3>Schedule</h3>
-					<p><strong>09/21 - 11:00 AM:</strong> Team Sign In</p>
-					<p><strong>09/21 - 12:00 PM:</strong> KickOff Event</p>
-					<p><strong>09/21 - 05:30 PM:</strong> Dinner</p>
-					<p><strong>09/22 - 09:00 AM:</strong> Breakfast</p>
-					<p><strong>09/22 - 12:00 PM:</strong> Lunch and Presentations</p>
-					<p><strong>09/22 - 01:00 PM:</strong> Awards Ceremony</p>
+					<p><strong>09/14 - 11:00 AM:</strong> Team Sign In</p>
+					<p><strong>09/14 - 12:00 PM:</strong> Kick Off Event</p>
+					<p><strong>09/14 - 05:30 PM:</strong> Dinner</p>
+					<p><strong>09/15 - 09:00 AM:</strong> Breakfast</p>
+					<p><strong>09/15 - 12:00 PM:</strong> Lunch and Presentations</p>
+					<p><strong>09/15 - 01:00 PM:</strong> Awards Ceremony</p>
 				</div>
 			</div><!--/ column-->
 		</div><!--/ container-->
@@ -106,17 +106,18 @@
 	</script>
 
 	<!-- Google Analytics -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-32952827-1']);
+	  _gaq.push(['_trackPageview']);
 
-	  ga('create', 'UA-32952827-2', 'hackcmu.com');
-	  ga('send', 'pageview');
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
 
 	</script>
-
 	<script type="text/javascript">
 	function tOL(link, category, action) { 	 
 		try { 
@@ -126,7 +127,7 @@
 		setTimeout(function() {
 		document.location.href = link.href;
 		}, 100);
-		}
+	}
 	</script>
 	
 </body>
