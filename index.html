@@ -54,17 +54,19 @@
 			
 			<div class="columns six offset-by-two">
 				<h2>Upperclassmen</h2>
-				 Hack as a team, or help mentor an underclassmen team.
-				 <div class="columns twelve offset-by-two">
-				 	<a class="button" href="https://docs.google.com/forms/d/1rHvx2BXwP-sgtYh31cEiM9S5H01EFl94AF3KXyaTeos/viewform"
-				 	onClick="tOL(this, 'Outbound Links', 'hackcmu.com'); return false;">Mentor a Team</a>
+				 <p>Hack as a team, or help mentor an underclassmen team.<p>
+				 <div style="display:table; margin: 0 auto;">
+				 	<a class="button" href="https://docs.google.com/forms/d/1rHvx2BXwP-sgtYh31cEiM9S5H01EFl94AF3KXyaTeos/viewform">Mentor a Team</a>
 				 </div>
 			</div><!--/ column-->
 			
-			<div class="columns twelve offset-by-four">	
-				<a class="button" href="https://docs.google.com/forms/d/1d1k_A5YiA2zYe11cfDUsUgXoEOxAvX5aJkB2u3mWd_U/viewform" onClick="tOL(this, 'Outbound Links', 'hackcmu.com'); return false;">Individual Registration</a>
-			
-				<a class="button" href="https://docs.google.com/forms/d/1KJrlx0tpElO7Yj0hoKCBTYD19luNe9nZdRgyMYh3wDM/viewform" onClick="tOL(this, 'Outbound Links', 'hackcmu.com'); return false;">Team Registration</a>
+			<div class="columns sixteen">
+				<!-- Center buttons in div -->
+				<div style="display:table; margin: 0 auto;">
+					<a class="button" href="https://docs.google.com/forms/d/1d1k_A5YiA2zYe11cfDUsUgXoEOxAvX5aJkB2u3mWd_U/viewform">Individual Registration</a>
+				
+					<a class="button" href="https://docs.google.com/forms/d/1KJrlx0tpElO7Yj0hoKCBTYD19luNe9nZdRgyMYh3wDM/viewform">Team Registration</a>
+				</div>	
 			</div><!--/ column-->
 		</div><!--/ container-->
 	</div><!--/ main-->
@@ -74,7 +76,7 @@
 				<hr> 
 				<div class="columns eight offset-by-five">
 					<h3>Schedule</h3>
-					<p><strong>09/14 - 11:00 AM:</strong> Team Sign In</p>
+					<p><strong>09/14 - 11:00 AM:</strong> Team Sign-in Starts</p>
 					<p><strong>09/14 - 12:00 PM:</strong> Kick Off Event</p>
 					<p><strong>09/14 - 05:30 PM:</strong> Dinner</p>
 					<p><strong>09/15 - 09:00 AM:</strong> Breakfast</p>
@@ -89,9 +91,13 @@
 	<footer class="band main">
 		<hr>
 		<div class="container">
-			<div class="columns eight offset-by-two last">
+			<div class="columns six offset-by-two">
 				<p>Copyright &copy; HackCMU 2013</p>
-			</div><!--/ column-->
+			</div>
+			<div class="columns six offset-by-two last">
+				<a href="mailto:msebek@andrew.cmu.edu">Send Feedback</a>
+			</div>
+			<!--/ column-->
 		</div><!--/ container-->
 	</footer><!--/ main-->		
 
@@ -99,10 +105,10 @@
 	<script type="text/javascript" src="js/skrollr.js"></script>	
 	<script type="text/javascript" src="js/skrollr.menu.js"></script>	
 	<script type="text/javascript">
-	var skr = skrollr.init({
-		forceHeight: false
-	});
-	skrollr.menu.init(skr);
+		var skr = skrollr.init({
+			forceHeight: false
+		});
+		skrollr.menu.init(skr);
 	</script>
 
 	<!-- Google Analytics -->
@@ -117,17 +123,6 @@
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
 
-	</script>
-	<script type="text/javascript">
-	function tOL(link, category, action) { 	 
-		try { 
-		_gaq.push(['_trackEvent', category , action]); 
-		} catch(err){}
-		 
-		setTimeout(function() {
-		document.location.href = link.href;
-		}, 100);
-	}
 	</script>
 	
 </body>
