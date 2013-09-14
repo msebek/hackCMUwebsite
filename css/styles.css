@@ -30,13 +30,13 @@ div.band .columns {
 }
 
 header.band {
+	background-image:url(../img/background.jpg);
+	background-size: 100%;
+
 	background: #4b371f;
 	color: white;
 	text-align: center;
 	padding: 10% 0 15% 0;
-
-	background-image:url(../img/background.jpg);
-	background-size: 100%;
 }
 
 
@@ -114,15 +114,8 @@ footer {
 	margin: 0 1em;	
 }
 
-@media only screen and (min-width: 200px) { 
-	header.band {
-		background-image:url(../img/background-tall.jpg);
-		background-size: 100%;
-	}	
-}
-
 /*as we don't have many media queries, we'll stick them all here*/
-@media only screen and (min-width: 767px) { 
+@media only screen and (min-width: 200px) { 
 	
 	body {
 		font-size: 1.125em; /* 18px / 16px */
@@ -156,4 +149,3 @@ footer {
 	}
 
 }
-
